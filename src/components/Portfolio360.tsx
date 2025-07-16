@@ -1,4 +1,3 @@
-
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react";
 import ProjectCard, { Project } from "./ProjectCard";
@@ -103,6 +102,10 @@ const Portfolio360 = () => {
       transform: `translate3d(${x}px, 0, ${z}px) scale(${Math.max(0.6, scale)})`,
       opacity: opacity,
       zIndex: Math.round(z + radius),
+      left: '50%',
+      top: '50%',
+      marginLeft: '-160px', // Half of card width (320px / 2)
+      marginTop: '-192px', // Half of card height (384px / 2)
     };
   };
 
@@ -119,7 +122,7 @@ const Portfolio360 = () => {
 
       <div className="relative w-full max-w-6xl h-96 flex items-center justify-center">
         <div 
-          className="relative w-full h-full"
+          className="relative w-full h-full flex items-center justify-center"
           style={{ 
             perspective: '1000px',
             transformStyle: 'preserve-3d'
