@@ -1,8 +1,8 @@
 
-import Portfolio360 from "@/components/Portfolio360";
+import PortfolioSite from "@/components/PortfolioSite";
 
 const Index = () => {
-  return <Portfolio360 />;
+  return <PortfolioSite />;
 };
 
 export default Index;
