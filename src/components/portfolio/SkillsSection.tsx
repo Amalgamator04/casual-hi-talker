@@ -19,35 +19,35 @@ const SkillsSection = () => {
       color: "from-blue-500 to-blue-600"
     },
     {
-      category: "Data Science",
+      category: "Data Science & ML",
       icon: BarChart3,
       skills: [
         { name: "Scikit-learn", level: 90 },
+        { name: "TensorFlow", level: 85 },
         { name: "Pandas", level: 95 },
-        { name: "NumPy", level: 90 },
-        { name: "Power BI", level: 85 }
+        { name: "NumPy", level: 90 }
       ],
       color: "from-green-500 to-green-600"
     },
     {
-      category: "AI/ML Tools",
+      category: "Visualization & BI",
       icon: Bot,
       skills: [
-        { name: "Streamlit", level: 90 },
-        { name: "LangChain", level: 80 },
-        { name: "Ollama", level: 75 },
-        { name: "LangGraph", level: 85 }
+        { name: "Matplotlib", level: 90 },
+        { name: "Seaborn", level: 85 },
+        { name: "Plotly", level: 80 },
+        { name: "Power BI", level: 85 }
       ],
       color: "from-purple-500 to-purple-600"
     },
     {
-      category: "Database & DevOps",
+      category: "Database & Tools",
       icon: Database,
       skills: [
-        { name: "SQL/MySQL", level: 85 },
+        { name: "MySQL", level: 85 },
+        { name: "Excel", level: 90 },
         { name: "Docker", level: 80 },
-        { name: "GitHub", level: 90 },
-        { name: "Botpress", level: 75 }
+        { name: "GitHub", level: 90 }
       ],
       color: "from-orange-500 to-orange-600"
     }
@@ -127,7 +127,7 @@ const SkillsSection = () => {
         <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold mb-8 text-muted-foreground">Technologies I Work With</h3>
           <div className="flex flex-wrap justify-center gap-8 max-w-4xl mx-auto">
-            {["Python", "FastAPI", "Docker", "Streamlit", "MySQL", "Power BI", "Git", "LangChain"].map((tech, index) => (
+            {["Python", "TensorFlow", "FastAPI", "Docker", "Streamlit", "MySQL", "Power BI", "Excel", "Matplotlib", "Seaborn", "Plotly", "Scikit-learn"].map((tech, index) => (
               <div
                 key={index}
                 className="px-6 py-3 rounded-full bg-primary/10 border border-primary/20 text-primary font-medium hover:bg-primary/20 hover:scale-105 transition-all duration-300"

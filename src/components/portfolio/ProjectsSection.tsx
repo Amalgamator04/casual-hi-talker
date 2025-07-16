@@ -1,6 +1,6 @@
 
 import { useState, useEffect, useRef } from "react";
-import { ExternalLink, Github, Zap, Cpu, Bot, BarChart3, Shield, MapPin, Plane, Cake, MessageSquare } from "lucide-react";
+import { ExternalLink, Github, Zap, Cpu, Bot, BarChart3, Shield, MapPin, Plane, Cake, MessageSquare, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ProjectsSection = () => {
@@ -10,6 +10,15 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
+      title: "NL2Insight: Natural Language to Automated Data Insights",
+      description: "AI-powered system that converts natural language queries into automated data insights with cleaned data, relevant visualizations, and textual explanations using pandas, matplotlib, seaborn, and plotly.",
+      icon: TrendingUp,
+      technologies: ["Python", "Pandas", "Matplotlib", "Seaborn", "Plotly", "Streamlit", "NLP"],
+      category: "AI/Data Analytics",
+      gradient: "from-indigo-500 to-purple-500"
+    },
+    {
+      id: 2,
       title: "KDP Content QA System",
       description: "Automated quality assurance pipeline for Kindle publishing with Excel tracker, escalation alerts, and comprehensive dashboard for content management.",
       icon: Zap,
@@ -18,7 +27,7 @@ const ProjectsSection = () => {
       gradient: "from-yellow-500 to-orange-500"
     },
     {
-      id: 2,
+      id: 3,
       title: "Laptop Price Predictor",
       description: "End-to-end ML application with FastAPI backend and Docker deployment. Predicts laptop prices based on user specifications input.",
       icon: Cpu,
@@ -27,7 +36,7 @@ const ProjectsSection = () => {
       gradient: "from-blue-500 to-purple-500"
     },
     {
-      id: 3,
+      id: 4,
       title: "Insurance Risk Predictor",
       description: "Full-stack application with Streamlit frontend and FastAPI backend. Predicts insurance categories based on health and financial data.",
       icon: Shield,
@@ -36,7 +45,7 @@ const ProjectsSection = () => {
       gradient: "from-green-500 to-teal-500"
     },
     {
-      id: 4,
+      id: 5,
       title: "Restaurant Recommendation Bot",
       description: "Natural language chatbot for food queries with realistic restaurant data and intelligent user interaction patterns.",
       icon: Bot,
@@ -45,16 +54,16 @@ const ProjectsSection = () => {
       gradient: "from-red-500 to-pink-500"
     },
     {
-      id: 5,
+      id: 6,
       title: "Agentic LangGraph System",
       description: "Advanced system using Planner + Tool agents with local LLM, featuring intelligent feedback loops and retry mechanisms.",
       icon: Bot,
-      technologies: ["LangGraph", "LLM", "AI Agents", "Python"],
+      technologies: ["LangChain", "LLM", "AI Agents", "Python"],
       category: "AI Systems",
       gradient: "from-purple-500 to-indigo-500"
     },
     {
-      id: 6,
+      id: 7,
       title: "IPL Analytics Dashboard",
       description: "Comprehensive cricket analytics platform providing insights on teams, players, match statistics, and performance trends.",
       icon: BarChart3,
@@ -63,7 +72,7 @@ const ProjectsSection = () => {
       gradient: "from-cyan-500 to-blue-500"
     },
     {
-      id: 7,
+      id: 8,
       title: "Flight Crash Survival Analysis",
       description: "Advanced anomaly detection system with data profiling capabilities and interactive Streamlit dashboard for aviation safety analysis.",
       icon: Plane,
@@ -72,7 +81,7 @@ const ProjectsSection = () => {
       gradient: "from-gray-500 to-slate-500"
     },
     {
-      id: 8,
+      id: 9,
       title: "Travel Agency System",
       description: "Comprehensive travel management platform with route planning, package management, and tourism documentation features.",
       icon: MapPin,
@@ -81,7 +90,7 @@ const ProjectsSection = () => {
       gradient: "from-emerald-500 to-green-500"
     },
     {
-      id: 9,
+      id: 10,
       title: "Bakery Website (Experimental)",
       description: "Creative one-page website featuring smooth scroll animations, interactive elements, and an impressive 3D cake model.",
       icon: Cake,
@@ -90,7 +99,7 @@ const ProjectsSection = () => {
       gradient: "from-pink-500 to-rose-500"
     },
     {
-      id: 10,
+      id: 11,
       title: "Chatbot Integration",
       description: "Seamless Botpress chatbot integration with custom domain deployment using CDN links for enhanced user interaction.",
       icon: MessageSquare,
@@ -167,9 +176,6 @@ const ProjectsSection = () => {
                       <button className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-200">
                         <Github size={16} className="text-primary" />
                       </button>
-                      <button className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors duration-200">
-                        <ExternalLink size={16} className="text-primary" />
-                      </button>
                     </div>
                   </div>
                 </CardHeader>
@@ -201,9 +207,9 @@ const ProjectsSection = () => {
         {/* Project Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 max-w-4xl mx-auto">
           {[
-            { number: "10+", label: "Projects Completed" },
-            { number: "5+", label: "Technologies Mastered" },
-            { number: "3+", label: "Domains Explored" },
+            { number: "11+", label: "Projects Completed" },
+            { number: "8+", label: "Technologies Mastered" },
+            { number: "4+", label: "Domains Explored" },
             { number: "100%", label: "Passion Driven" }
           ].map((stat, index) => (
             <div
