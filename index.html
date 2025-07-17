@@ -1,24 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prabhav's Portfolio</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <meta name="description" content="Prabhav Sharma - Data Science Portfolio">
+    <meta name="author" content="Prabhav Sharma">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Prabhav's Portfolio">
+    <meta property="og:description" content="Data Science enthusiast with expertise in Python, ML, and AI development">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-brand">
+                <h1>Prabhav Sharma</h1>
+            </div>
+            <nav class="header-nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#project360" class="nav-link">360° View</a>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+                    <i data-lucide="sun" class="theme-icon"></i>
+                </button>
+                <a href="#" class="resume-btn">
+                    <i data-lucide="download"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </header>
 
-    <meta property="og:title" content="Prabhav's Portfolio" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="wave-emoji">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="hero-name">Prabhav Sharma</span>
+                        <span class="hero-subtitle">Data Science Enthusiast</span>
+                    </h1>
+                    <p class="hero-description">
+                        Passionate about transforming data into insights with Python, ML, and AI. 
+                        Building scalable solutions that make a real impact.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span>About Me</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-elements">
+                        <div class="floating-card" data-skill="Python">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <div class="floating-card" data-skill="AI">
+                            <i data-lucide="brain"></i>
+                        </div>
+                        <div class="floating-card" data-skill="Analytics">
+                            <i data-lucide="bar-chart-3"></i>
+                        </div>
+                        <div class="floating-card" data-skill="ML">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i data-lucide="chevron-down"></i>
+                </div>
+            </div>
+        </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I am <strong>Prabhav Sharma</strong>, a passionate and creative Data Science enthusiast with a strong foundation in Python, machine learning, and full-stack AI development. I've completed impactful internships and built multiple real-world projects from scratch, focusing on automation, analytics, and deployment.
+                        </p>
+                        <p>
+                            I bring a builder's mindset and love solving problems with clean, scalable tech. I'm committed to continuous learning and thrive in collaborative, high-impact environments. Always open to challenges where I can apply my knowledge to create something meaningful.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i data-lucide="target"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h3>Problem Solver</h3>
+                                    <p>Love tackling complex challenges with innovative solutions</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i data-lucide="rocket"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h3>Builder's Mindset</h3>
+                                    <p>From concept to deployment, I build scalable solutions</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i data-lucide="users"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h3>Team Player</h3>
+                                    <p>Thrive in collaborative, high-impact environments</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i data-lucide="code"></i>
+                            <h3>Programming & Frameworks</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">Python</div>
+                            <div class="skill-item">FastAPI</div>
+                            <div class="skill-item">Flask</div>
+                            <div class="skill-item">Streamlit</div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i data-lucide="brain"></i>
+                            <h3>Machine Learning & AI</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">Scikit-learn</div>
+                            <div class="skill-item">TensorFlow</div>
+                            <div class="skill-item">Pandas</div>
+                            <div class="skill-item">NumPy</div>
+                            <div class="skill-item">LangChain</div>
+                            <div class="skill-item">Ollama</div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i data-lucide="bar-chart"></i>
+                            <h3>Data Visualization</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">Matplotlib</div>
+                            <div class="skill-item">Seaborn</div>
+                            <div class="skill-item">Plotly</div>
+                            <div class="skill-item">Power BI</div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i data-lucide="database"></i>
+                            <h3>Database & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">SQL</div>
+                            <div class="skill-item">MySQL</div>
+                            <div class="skill-item">Excel</div>
+                            <div class="skill-item">GitHub</div>
+                            <div class="skill-item">Docker</div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i data-lucide="bot"></i>
+                            <h3>Chatbots & Web</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">Botpress</div>
+                            <div class="skill-item">HTML/CSS/JS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="experience-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="experience-card">
+                                <div class="experience-header">
+                                    <div class="company-info">
+                                        <h3>Bharti Airtel</h3>
+                                        <span class="role">Data Analyst Intern</span>
+                                    </div>
+                                    <div class="experience-icon">
+                                        <i data-lucide="building"></i>
+                                    </div>
+                                </div>
+                                <div class="experience-description">
+                                    <ul>
+                                        <li>Built comprehensive dashboards and insights using Power BI</li>
+                                        <li>Cleaned and visualized complex datasets to solve business problems</li>
+                                        <li>Collaborated with cross-functional teams to deliver data-driven solutions</li>
+                                    </ul>
+                                </div>
+                                <div class="experience-skills">
+                                    <span class="skill-tag">Power BI</span>
+                                    <span class="skill-tag">Data Analysis</span>
+                                    <span class="skill-tag">Dashboard Design</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Project cards will be generated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 360 Project View Section -->
+        <section id="project360" class="project360-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">360° Project Experience</h2>
+                    <p class="section-subtitle">Explore my projects in an interactive 3D environment</p>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="project360-container">
+                    <div class="project360-canvas">
+                        <div class="orbit-container">
+                            <div class="central-sphere">
+                                <div class="sphere-content">
+                                    <i data-lucide="rocket"></i>
+                                    <span>Projects</span>
+                                </div>
+                            </div>
+                            <div class="orbit orbit-1">
+                                <div class="project-node" data-project="0">
+                                    <i data-lucide="search"></i>
+                                </div>
+                            </div>
+                            <div class="orbit orbit-2">
+                                <div class="project-node" data-project="1">
+                                    <i data-lucide="laptop"></i>
+                                </div>
+                                <div class="project-node" data-project="2">
+                                    <i data-lucide="shield"></i>
+                                </div>
+                            </div>
+                            <div class="orbit orbit-3">
+                                <div class="project-node" data-project="3">
+                                    <i data-lucide="utensils"></i>
+                                </div>
+                                <div class="project-node" data-project="4">
+                                    <i data-lucide="brain"></i>
+                                </div>
+                                <div class="project-node" data-project="5">
+                                    <i data-lucide="bar-chart-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-info">
+                            <h3 id="project-title">Select a project to explore</h3>
+                            <p id="project-description">Click on any project node to view details</p>
+                            <div id="project-tech" class="project-tech"></div>
+                            <div id="project-actions" class="project-actions" style="display: none;">
+                                <a href="#" id="project-code-link" class="btn btn-primary">
+                                    <i data-lucide="github"></i>
+                                    <span>View Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Social Links -->
+    <div class="floating-social">
+        <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+            <i data-lucide="github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+            <i data-lucide="linkedin"></i>
+        </a>
+        <a href="mailto:prabhav@example.com" class="social-link" title="Email">
+            <i data-lucide="mail"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Prabhav Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
