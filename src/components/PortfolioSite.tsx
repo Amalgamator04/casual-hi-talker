@@ -100,7 +100,7 @@ const PortfolioSite = () => {
       {/* Floating Social Links */}
       <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-40 space-y-4">
         <a
-          href="https://github.com"
+          href="https://github.com/Amalgamator04"
           target="_blank"
           rel="noopener noreferrer"
           className="block p-3 rounded-full bg-background/80 backdrop-blur-sm border border-border/50 hover:bg-accent hover:scale-110 transition-all duration-300"
@@ -108,7 +108,7 @@ const PortfolioSite = () => {
           <Github size={20} />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/prabhav-sharma-6b3ba8263"
           target="_blank"
           rel="noopener noreferrer"
           className="block p-3 rounded-full bg-background/80 backdrop-blur-sm border border-border/50 hover:bg-accent hover:scale-110 transition-all duration-300"

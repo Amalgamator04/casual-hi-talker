@@ -44,14 +44,14 @@ const ContactSection = () => {
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/prabhav-sharma",
-      href: "https://github.com"
+      value: "github.com/Amalgamator04",
+      href: "https://github.com/Amalgamator04"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/prabhav-sharma",
-      href: "https://linkedin.com"
+      value: "linkedin.com/in/prabhav-sharma-6b3ba8263",
+      href: "https://www.linkedin.com/in/prabhav-sharma-6b3ba8263"
     },
     {
       icon: MapPin,

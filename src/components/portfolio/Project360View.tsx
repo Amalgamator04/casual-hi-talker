@@ -316,7 +316,7 @@ const Project360View = () => {
         )}
       </div>
 
-      <style jsx>{`
+      <style>{`
         .glow-effect {
           box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
         }
