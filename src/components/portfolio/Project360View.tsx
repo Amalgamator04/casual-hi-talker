@@ -19,14 +19,6 @@ const Project360View = () => {
 
   const projects3D: Project3D[] = [
     {
-      id: 1,
-      title: "KDP Content QA",
-      description: "Automated quality assurance pipeline for Kindle publishing",
-      category: "Automation",
-      color: "#F59E0B",
-      icon: "⚡"
-    },
-    {
       id: 2,
       title: "Laptop Predictor",
       description: "ML-powered laptop price prediction system",
@@ -52,8 +44,8 @@ const Project360View = () => {
     },
     {
       id: 5,
-      title: "Agentic LangGraph",
-      description: "Advanced AI agent system with feedback loops",
+      title: "LangChain AI System",
+      description: "AI system built at Airtel for automated data insights",
       category: "AI Systems",
       color: "#6366F1",
       icon: "🧠"

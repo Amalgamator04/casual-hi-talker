@@ -9,15 +9,6 @@ const ProjectsSection = () => {
 
   const projects = [
     {
-      id: 1,
-      title: "KDP Content QA System",
-      description: "Automated quality assurance pipeline for Kindle publishing with Excel tracker, escalation alerts, and comprehensive dashboard for content management.",
-      icon: Zap,
-      technologies: ["Python", "Excel", "Automation", "Quality Assurance"],
-      category: "Automation",
-      gradient: "from-yellow-500 to-orange-500"
-    },
-    {
       id: 2,
       title: "Laptop Price Predictor",
       description: "End-to-end ML application with FastAPI backend and Docker deployment. Predicts laptop prices based on user specifications input.",
@@ -46,10 +37,10 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: "Agentic LangGraph System",
-      description: "Advanced system using Planner + Tool agents with local LLM, featuring intelligent feedback loops and retry mechanisms.",
+      title: "LangChain AI System",
+      description: "Advanced AI system built during Airtel internship using LangChain for automated data insight generation from natural language queries.",
       icon: Bot,
-      technologies: ["LangGraph", "LLM", "AI Agents", "Python"],
+      technologies: ["LangChain", "LLM", "AI Agents", "Python"],
       category: "AI Systems",
       gradient: "from-purple-500 to-indigo-500"
     },
