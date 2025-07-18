@@ -38,8 +38,14 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "prabhav.sharma@example.com",
-      href: "mailto:prabhav.sharma@example.com"
+      value: "prabhavs2004@gmail.com",
+      href: "mailto:prabhavs2004@gmail.com"
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+91 7303025805",
+      href: "tel:+917303025805"
     },
     {
       icon: Github,
@@ -74,14 +80,13 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
               <h3 className="text-3xl font-bold mb-6">Get In Touch</h3>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                I'm always open to discussing new opportunities, innovative projects, or just having a chat about 
-                data science and AI development. Feel free to reach out through any of the channels below.
+                I'm a data analyst who has built AI solutions to automate insight extraction from natural language to insight generation with SQL connections. Always open to discussing new opportunities, innovative projects, or just having a chat about data science and AI development.
               </p>
             </div>
 
@@ -138,98 +143,6 @@ const ContactSection = () => {
             </Card>
           </div>
 
-          {/* Contact Form */}
-          <div>
-            <Card className="border-border/50 bg-background/50 backdrop-blur-sm">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Send Message</h3>
-                
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        Name *
-                      </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className="transition-all duration-300 focus:ring-2 focus:ring-primary/20 border-border/50 focus:border-primary/50"
-                        placeholder="Your full name"
-                      />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        Email *
-                      </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className="transition-all duration-300 focus:ring-2 focus:ring-primary/20 border-border/50 focus:border-primary/50"
-                        placeholder="your.email@example.com"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium">
-                      Subject *
-                    </label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleInputChange}
-                      required
-                      className="transition-all duration-300 focus:ring-2 focus:ring-primary/20 border-border/50 focus:border-primary/50"
-                      placeholder="What's this about?"
-                    />
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      Message *
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={6}
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                      className="w-full px-3 py-2 border border-border/50 rounded-md focus:ring-2 focus:ring-primary/20 focus:border-primary/50 transition-all duration-300 bg-background/50 resize-none"
-                      placeholder="Tell me about your project or just say hello..."
-                    />
-                  </div>
-
-                  <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full py-3 text-lg font-semibold hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2"
-                  >
-                    {isSubmitting ? (
-                      <>
-                        <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                        Sending...
-                      </>
-                    ) : (
-                      <>
-                        <Send size={20} />
-                        Send Message
-                      </>
-                    )}
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
         </div>
 
         {/* Footer */}
