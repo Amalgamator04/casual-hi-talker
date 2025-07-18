@@ -20,14 +20,6 @@ const Project360View = () => {
   const projects3D: Project3D[] = [
     {
       id: 1,
-      title: "NL2Insight",
-      description: "AI-powered natural language to automated data insights",
-      category: "AI/Data Analytics",
-      color: "#6366F1",
-      icon: "📊"
-    },
-    {
-      id: 2,
       title: "KDP Content QA",
       description: "Automated quality assurance pipeline for Kindle publishing",
       category: "Automation",
@@ -35,7 +27,7 @@ const Project360View = () => {
       icon: "⚡"
     },
     {
-      id: 3,
+      id: 2,
       title: "Laptop Predictor",
       description: "ML-powered laptop price prediction system",
       category: "Machine Learning",
@@ -43,7 +35,7 @@ const Project360View = () => {
       icon: "💻"
     },
     {
-      id: 4,
+      id: 3,
       title: "Insurance Risk AI",
       description: "AI-driven insurance risk assessment platform",
       category: "FinTech",
@@ -51,7 +43,7 @@ const Project360View = () => {
       icon: "🛡️"
     },
     {
-      id: 5,
+      id: 4,
       title: "Restaurant Bot",
       description: "Natural language restaurant recommendation chatbot",
       category: "AI/NLP",
@@ -59,15 +51,15 @@ const Project360View = () => {
       icon: "🤖"
     },
     {
-      id: 6,
-      title: "Agentic System",
+      id: 5,
+      title: "Agentic LangGraph",
       description: "Advanced AI agent system with feedback loops",
       category: "AI Systems",
       color: "#6366F1",
       icon: "🧠"
     },
     {
-      id: 7,
+      id: 6,
       title: "IPL Analytics",
       description: "Comprehensive cricket analytics dashboard",
       category: "Analytics",
@@ -151,15 +143,12 @@ const Project360View = () => {
               >
                 <div className={`w-60 h-80 rounded-3xl border-2 transition-all duration-700 hover:scale-110 ${
                   index === currentIndex 
-                    ? 'shadow-2xl border-primary' 
+                    ? 'shadow-2xl border-primary glow-effect' 
                     : 'shadow-lg border-border/30 hover:border-primary/50'
                 }`}
                 style={{ 
                   background: `linear-gradient(135deg, ${project.color}15, ${project.color}05)`,
-                  backdropFilter: 'blur(10px)',
-                  ...(index === currentIndex && {
-                    boxShadow: `0 0 30px ${project.color}30`
-                  })
+                  backdropFilter: 'blur(10px)'
                 }}>
                   
                   {/* Card Header */}
@@ -315,6 +304,9 @@ const Project360View = () => {
               </p>
               
               <div className="flex gap-4">
+                <button className="flex-1 py-3 px-6 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors duration-200">
+                  View Live Demo
+                </button>
                 <button className="flex-1 py-3 px-6 border border-border rounded-full hover:bg-muted transition-colors duration-200">
                   View Source Code
                 </button>
@@ -323,6 +315,12 @@ const Project360View = () => {
           </div>
         )}
       </div>
+
+      <style jsx>{`
+        .glow-effect {
+          box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+      `}</style>
     </section>
   );
 };
