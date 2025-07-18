@@ -11,10 +11,10 @@ const SkillsSection = () => {
       category: "Programming",
       icon: Code,
       skills: [
-        { name: "Python", level: 95 },
-        { name: "FastAPI", level: 85 },
-        { name: "Flask", level: 80 },
-        { name: "JavaScript", level: 75 }
+        { name: "Python", level: 9.5 },
+        { name: "React", level: 8.5 },
+        { name: "FastAPI", level: 8.5 },
+        { name: "Flask", level: 8.0 }
       ],
       color: "from-blue-500 to-blue-600"
     },
@@ -22,10 +22,10 @@ const SkillsSection = () => {
       category: "Data Science",
       icon: BarChart3,
       skills: [
-        { name: "Scikit-learn", level: 90 },
-        { name: "Pandas", level: 95 },
-        { name: "NumPy", level: 90 },
-        { name: "Power BI", level: 85 }
+        { name: "Scikit-learn", level: 9.0 },
+        { name: "Pandas", level: 9.5 },
+        { name: "NumPy", level: 9.0 },
+        { name: "Power BI", level: 8.5 }
       ],
       color: "from-green-500 to-green-600"
     },
@@ -33,10 +33,9 @@ const SkillsSection = () => {
       category: "AI/ML Tools",
       icon: Bot,
       skills: [
-        { name: "Streamlit", level: 90 },
-        { name: "LangChain", level: 80 },
-        { name: "Ollama", level: 75 },
-        { name: "LangGraph", level: 85 }
+        { name: "Streamlit", level: 9.0 },
+        { name: "LangChain", level: 8.0 },
+        { name: "Ollama", level: 7.5 }
       ],
       color: "from-purple-500 to-purple-600"
     },
@@ -44,10 +43,10 @@ const SkillsSection = () => {
       category: "Database & DevOps",
       icon: Database,
       skills: [
-        { name: "SQL/MySQL", level: 85 },
-        { name: "Docker", level: 80 },
-        { name: "GitHub", level: 90 },
-        { name: "Botpress", level: 75 }
+        { name: "SQL/MySQL", level: 8.5 },
+        { name: "Docker", level: 8.0 },
+        { name: "GitHub", level: 9.0 },
+        { name: "Botpress", level: 7.5 }
       ],
       color: "from-orange-500 to-orange-600"
     }
@@ -103,13 +102,13 @@ const SkillsSection = () => {
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="font-medium">{skill.name}</span>
-                      <span className="text-sm text-muted-foreground">{skill.level}%</span>
+                      <span className="text-sm text-muted-foreground">{skill.level}/10</span>
                     </div>
                     <div className="w-full bg-secondary/30 rounded-full h-3 overflow-hidden">
                       <div
                         className={`h-full bg-gradient-to-r ${category.color} rounded-full transition-all duration-1000 ease-out relative`}
                         style={{
-                          width: isVisible ? `${skill.level}%` : "0%",
+                          width: isVisible ? `${skill.level * 10}%` : "0%",
                           transitionDelay: `${categoryIndex * 200 + skillIndex * 100}ms`
                         }}
                       >

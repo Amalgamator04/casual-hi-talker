@@ -77,8 +77,7 @@ const InternshipSection = () => {
                   </div>
 
                   <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                    Contributed to data-driven decision making at one of India's leading telecommunications companies. 
-                    Focused on creating meaningful visualizations and deriving actionable insights from complex datasets.
+                    Contributed to building AI solutions to automate data insight generation from natural language - users can simply write their needs and get explained answers based on data. Focused on creating meaningful visualizations and deriving actionable insights from complex datasets.
                   </p>
 
                   {/* Achievements Grid */}
