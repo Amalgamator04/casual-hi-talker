@@ -132,7 +132,7 @@ const ContactSection = () => {
                     <p className="text-muted-foreground">Get a detailed overview of my experience and skills</p>
                   </div>
                   <Button
-                    onClick={() => window.open("#", "_blank")}
+                    onClick={() => window.open("https://drive.google.com/file/d/16jckQOx1Hl9qgSVD4RPzNKqmwZo4a_Lk/view?usp=sharing", "_blank")}
                     className="flex items-center gap-2 hover:scale-105 transition-transform duration-300"
                   >
                     <Download size={16} />

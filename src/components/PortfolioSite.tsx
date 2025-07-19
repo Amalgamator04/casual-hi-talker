@@ -64,7 +64,7 @@ const PortfolioSite = () => {
             </Button>
             
             <Button
-              onClick={() => window.open("#", "_blank")}
+              onClick={() => window.open("https://drive.google.com/file/d/16jckQOx1Hl9qgSVD4RPzNKqmwZo4a_Lk/view?usp=sharing", "_blank")}
               className="hidden md:flex items-center gap-2"
             >
               <Download size={16} />
